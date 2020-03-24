@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"yodita/soong/android"
+	"fluid/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -127,8 +127,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include Yodita variables
-		Yodita android.Product_variables
+		// include Fluid variables
+		Fluid android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -293,8 +293,8 @@ type productVariables struct {
 
 	TargetFSConfigGen []string `json:",omitempty"`
 
-	// include Yodita variables
-	Yodita android.ProductVariables
+	// include Fluid variables
+	Fluid android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
