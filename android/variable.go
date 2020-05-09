@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"titanium/soong/android"
+	"aosuip/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -127,8 +127,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include Titanium variables
-		Titanium android.Product_variables
+		// include AOSuiP variables
+		AOSuiP android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -293,8 +293,8 @@ type productVariables struct {
 
 	TargetFSConfigGen []string `json:",omitempty"`
 
-	// include Titanium variables
-	Titanium android.ProductVariables
+	// include AOSuiP variables
+	AOSuiP android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
