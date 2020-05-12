@@ -127,8 +127,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include AOSuiP variables
-		AOSuiP android.Product_variables
+		// include Aosuip variables
+		Aosuip android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -293,8 +293,8 @@ type productVariables struct {
 
 	TargetFSConfigGen []string `json:",omitempty"`
 
-	// include AOSuiP variables
-	AOSuiP android.ProductVariables
+	// include Aosuip variables
+	Aosuip android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
